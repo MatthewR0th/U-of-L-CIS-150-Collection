@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 3
+   Case Problem 1
+   
+   Layout styles for Slate and Pencil Tutoring
+   Author: Matthew Roth
+   Date:   6/17/2020
+   
+   Filename: sp_layout.css
+
+*/
+
+/* Window and Body Styles */
+html {
+  height: 100%;
+}
+
+body {
+ 	max-width: 960px;
+	min-width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 0 auto;
+	min-height: 100%;
+  width: 95%;
+}
+img {
+  display: block;
+}
+
+/* CSS Grid Styles */
+
+body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+img#logo {
+  grid-column: span 3;
+  width: 100%;
+}
+nav.horizontal, footer {
+  grid-column: span 4;
+}
+
+aside {
+  grid-column: span 2;
+}
+
+/* Horizontal Navigation List Styles */
+nav.horizontal li {
+  display: block;
+  float: left;
+  width: 12.5%;
+}
+
+
+/* Section Styles */
+
+section p {
+width: 70%;
+margin: 0 auto;
+}
+
+section img {
+width: 50%;
+margin: 0 auto;
+}
+/* Customer Comment Styles */
+aside {
+  width: 75%;
+  padding-bottom: 30px;
+}
+
+aside img {
+float: left;
+width: 20%;
+}
+
+aside p {
+float: left;
+width: 75%;
+margin-left: 5%;
+}
+aside:nth-of-type(odd){
+  justify-self: end;
+}

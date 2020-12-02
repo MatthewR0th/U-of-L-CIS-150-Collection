@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 3
+   Coding Challenge 2
+
+   Author: Matthew Roth
+   Date:   6/9/2020
+   
+   Filename: code3-2_layout.css
+
+*/
+
+header {
+  padding: 10px;
+  outline-style: dashed;
+  outline-color: gray;
+}
+
+footer {
+padding: 10px;
+  outline-style: dashed;
+  outline-color: gray;
+}
+
+aside {
+padding: 10px;
+  outline-style: dashed;
+  outline-color: gray;
+
+}
+
+article {
+padding: 10px;
+  outline-style: dashed;
+  outline-color: gray;
+}
+
+a {
+padding: 10px;
+  outline-style: dashed;
+  outline-color: gray;
+
+}
+
+body {
+width: 90%;
+min-width: 640px;
+max-width: 1024px;
+margin: 30px auto;
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: 50px 30px 1fr 1fr 100px;
+grid-gap: 15px;
+}
+
+a {
+  display: block;
+}
+
+header {
+  grid-column: 1/-1;
+}
+
+article#intro {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+article#main {
+  grid-row: span 2;
+  grid-column: span 3;
+}
+
+footer {
+  grid-column: span 2;
+}
