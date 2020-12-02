@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 4
+   Coding Challenge 3
+
+   Author: Matthew Roth
+   Date:   6/18/2020
+   
+   Filename: code4-3_cube.css
+
+*/
+
+h1 {
+  color: white;
+  text-shadow: 0px 0px 20px rgb(120, 85, 0);
+}
+div#cube {
+perspective: 500px;
+transform-style: preserve-3d;
+
+}
+
+img {
+  filter: sepia(1);
+  box-shadow: 0px 0px 20px black;
+}
+
+#img1 {
+transform:translateZ(-150px);
+}
+
+#img2 {
+transform:rotateX(90deg)translateZ(-150px);
+}
+
+#img3 {
+transform:rotateY(-90deg)translateZ(150px)
+}
+
+#img4 {
+transform:rotateY(90deg)translateZ(150px);
+}
+
+#img5 {
+  transform:rotateX(-90deg)translateZ(-150px)
+}
